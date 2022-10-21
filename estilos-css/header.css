@@ -1,0 +1,29 @@
+body {
+    font-family: var(--raleway);
+    background-color: var(--branco);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__lupa--img {
+    width: 2rem;
+}
+
+.header__logo--img {
+    width: 7rem;
+}
+
+.cabecalho__pesquisa {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__lupa--campo {
+        display: none;
+    }
+}

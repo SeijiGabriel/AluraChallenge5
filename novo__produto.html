@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Adicionar novo produto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="estilos-css/header_novo.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__campo">
+            <a class="cabecalho__inicio" href="index.html" id="header">
+                <img class="cabecalho__logo" src="/img/logo.svg" alt="Loja Alura Geek">
+            </a>
+            <div class="cabecalho__pesquisa">
+                <input type="search" id="h__input" name="search" class="cabecalho__pesquisa--barra" minlength="3"
+                    placeholder="O que deseja encontrar?">
+                <img src="/img/lupa.svg" alt="lupa de pesquisa" class="cabecalho__lupa--campo">
+            </div>
+        </div>
+        <button class="cabecalho__menu">Menu administrador</button>
+        <a href="#" class="cabecalho__lupa"><span class="material-icons">search</span></a>
+    </header>
+        <main class="principal">
+            <section class="principal__area">
+                <h1 class="formulario">Adicionar novo produto</h1>
+                <section class="principal__formulario">
+                    <div class="formulario__url">
+                        <input type="url" name="url" id="url" placeholder="URL da imagem" class="formulario__img">
+                    </div>
+                    <div class="formulario__categorias">
+                        <p class="formulario__titulo">Categorias</p>
+                        <select name="categorias" id="categorias" class="formulario__selecao" role="presentation">
+                                <li class="formulario__dropdown">Categorias</li>
+                                <option value="Consoles" class="formulario__opcoes">Consoles</option>
+                                <option value="Star Wars" class="formulario__opcoes">Star Wars</option>
+                                <option value="Diversos" class="formulario__opcoes">Diversos</option>
+                        </select>
+                    </div>
+                    <div class="formulario__nome">
+                        <label for="name" class="formulario__titulo">Nome do produto</label>
+                        <input type="text" placeholder="Produto XYZ" class="formulario__input">
+                    </div>
+                    <div class="formulario__preco">
+                        <label for="name" class="formulario__titulo-preco">Preço do produto</label>
+                        <input type="text" placeholder="R$ 60,00" class="formulario__input-preco">
+                    </div>
+                    <div class="formulario__descricao">
+                        <input type="text" placeholder="Descrição do produto" class="formulario__input-descricao">
+                    </div>
+                    <div class="formulario__botao">
+                        <button class="formulario__botao-adicionar">Adicionar produto</button>
+                    </div>
+                </section>
+            </section>    
+        </main>
+        <section class="contato">
+            <div class="contato__link--rodape">    
+                <a href="#" class="contato__link">
+                    <div class="contato__logo">
+                        <img src="img/logo.svg" alt="Logo Alura Geek" class="contato__logo--alura">
+                    </div>
+                </a>
+                <ul class="contato__link--alura">
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Quem somos nós</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Política de privacidade</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Programa fidelidade</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Nossas lojas</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Quero ser franqueado</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Anuncie aqui</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="contact_form" class="contato__formulario">
+                <h2 class="contato__formulario--titulo">Fale conosco</h2>
+                <label for="name" class="contato__formulario--label">Escreva seu nome</label>
+                <input type="name" type="text" data-type="contact" maxlength="50" placeholder="Nome" required class="contato__formulario--nome">
+                <span role="alert"></span>
+                <label for="message" class="contato__formulario--label">Escreva sua mensagem</label>
+                <textarea name="mensagem" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem" maxlength="200" required class="contato__formulario--mensagem"></textarea>
+                <span role="alert"></span>
+                <button type="submit" class="contato__formulario--botao">Enviar mensagem</button>
+            </form>
+        </section>
+
+    <footer class="rodape">
+        <a href="https://github.com/SeijiGabriel" class="rodape__github"><p class="rodape__texto">Desenvolvido por Gabriel Kanda</p></a>
+        <p class="rodape__texto">2022</p>
+    </footer>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.principal__produtos {
+    padding: 1rem;
+    background-color: var(--branco-fundo);
+    box-sizing: border-box;
+}
+
+.principal__inicio {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 0;
+    margin-left: 0;
+}
+
+.principal__cabecalho {
+    font-size: 22px;
+    font-style: bold;
+    font-family: var(--raleway);
+}
+
+.principal__botao--adicionar {
+    padding: 12px 16px 12px 16px;
+    margin-top: 1rem;
+    background-color: var(--azul-fonte);
+    border: none;
+    font-size: 14px;
+    color: var(--branco);
+    font-style: bold;
+    cursor: pointer;
+}
+
+.principal__galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.delete , .edit {
+    position: absolute;
+    padding: 11px 11px 145px 0;
+}
+
+.delete {
+    color: white;
+    margin-left: 73px;
+}
+
+.edit {
+    color: white;
+    margin-left: 111px;
+}
+
+.principal__card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.principal__nome {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--raleway);
+    margin-top: 8px;
+}
+
+.principal__valor {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0 8px 0;
+}
+
+.principal__ver {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 14px;
+    font-weight: 500;
+}
+ .principal__imagem-maior {
+    display: none;
+ }
+
+@media screen and (min-width: 768px){
+    
+    .principal__galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .principal__imagem {
+        display: none;
+    }
+
+    .principal__imagem-maior {
+        display: grid;
+    }
+
+    .principal__card {
+        padding: 0;
+    }
+
+    .delete {
+        margin-left: 97px;
+    }
+
+    .edit {
+        margin-left: 135px;
+    }
+
+    .contato__logo--alura {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and  (min-width: 1440px){
+    .principal__galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

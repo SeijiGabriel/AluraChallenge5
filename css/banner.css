@@ -1,0 +1,59 @@
+.banner {
+    background:url("../img/banner_mobile.jpeg")  no-repeat;
+    color: var(--branco);
+	background-size: cover;
+	background-position: center;
+    box-shadow: inset 0 0 150rem black;
+	padding: 16px;
+    width: 100vw;
+	height: 50vw;
+	display: flex;
+	flex-direction: column;
+	row-gap:14px;
+	justify-content: flex-end;
+	box-sizing: border-box;
+}
+.banner__link {
+    text-decoration: none;
+    font-family: var(--raleway);
+    color: var(--branco);
+    text-decoration: none;
+    box-sizing: border-box;   
+}
+
+.banner__titulo{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.banner__botao {
+    border-style: none;
+    background-color: var(--azul-fonte);
+    padding: 0.75rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+            padding: 16px;
+            height:352px;	  
+    }
+
+    .banner__titulo {
+        font-size: 52px;
+    }
+
+    .banner__texto {
+        font-size: 22px;
+    }
+
+    .banner__botao {
+        width:130px;
+		padding:16px;
+    }
+
+}

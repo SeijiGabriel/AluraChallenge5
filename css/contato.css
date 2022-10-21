@@ -1,0 +1,144 @@
+.contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--azul-fundo);
+    padding: 1rem ;
+    font-family: var(--raleway);
+}
+
+.contato__logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contato__link--geek {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--preto);
+    
+}
+
+.contato__link--alura {
+    list-style: none;
+    text-align: center;
+}
+
+.contato__link--empresa {
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.contato__formulario {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.contato__formulario--titulo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.contato__formulario--nome , .contato__formulario--mensagem {
+    border: none;
+    margin: .5rem 0;
+    box-shadow: 0 1px 0 var(--cinza-borda);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--raleway);
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    resize: none;
+    padding: 8px;
+}
+
+.contato__formulario--mensagem {
+    height: 5.125rem;
+}
+
+.contato__formulario--label {
+    display: none;
+}
+
+.contato__formulario--botao {
+    font-family: var(--raleway);
+    background-color: var(--azul-fonte);
+    color: var(--branco);
+    padding: 0.75rem 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-style: none;
+    align-self:flex-start;
+}
+
+.rodape__github {
+    text-decoration: none;
+    color: black;
+}
+
+.rodape {
+    background: var(--branco);
+    font-family: var(--raleway);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__texto {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .contato {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+
+    .contato__link--alura {
+        text-align: start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contato__link--geek {
+        margin-bottom: 3rem;
+    }
+
+    .contato__formulario--nome , .contato__formulario--mensagem {
+        
+        width: 434px;
+    }
+
+    .contato__logo--alura {
+        margin: 14px 0 14px 0;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .contato__link--rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 7rem;
+    }
+    
+    .contato {
+        padding: 4rem 9.5rem;
+    }
+
+
+}

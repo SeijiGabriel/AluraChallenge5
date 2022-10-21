@@ -1,0 +1,86 @@
+body {
+    background-color: var(--branco);
+    font-family: var(--raleway);
+    margin: inherit;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 16px;
+}
+
+.cabecalho__logo {
+    width: 7.5rem;
+
+}
+
+.cabecalho__login {
+    background-color: transparent;
+    color: var(--azul-fonte);
+    border: 1px solid var(--azul-fonte);
+    font-weight: 600;
+    padding: 0.75rem 2.97rem;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.cabecalho__pesquisa {
+    display: none;
+}
+
+.cabecalho__login--produtos {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .cabecalho__campo {
+        display: flex;
+        align-items: center;
+        column-gap: 2em;
+    }
+    
+    .cabecalho__pesquisa{
+		align-items:center;
+        width: 272px;
+        height: 40px;
+		padding:0.2rem 1rem;
+		background-color: #F5F5F5;
+		border-radius: 20px;
+		display:flex;
+	}
+
+    .cabecalho__lupa {
+        display: none;
+    }
+
+    .cabecalho__pesquisa--barra {
+        width: inherit;
+        background: var(--cinza-claro);
+        border: none;
+        margin-left: 1rem;
+        font-family: var(--raleway);
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+}
+ 
+@media screen and (min-width:1440px) {
+
+    .cabecalho {
+        padding: 2em 9.5em;
+       
+    }
+
+    .cabecalho__logo {
+        width: 11rem;
+    }
+
+    .banner__campo {
+        margin-left: 9.5rem;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek-Desafio extra</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="estilos-css/extra.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__campo cabecalho__extra">
+            <a class="cabecalho__inicio" href="#" id="header">
+                <a href="index.html"><img class="cabecalho__logo" src="/img/logo.svg" alt="Loja Alura Geek"></a>
+            </a>
+            <div class="cabecalho__pesquisa cabecalho__pesquisa-campo">
+                <input type="search" id="h__input" name="search" class="cabecalho__pesquisa--barra" minlength="3" placeholder="O que deseja encontrar?">
+                <img src="/img/lupa.svg" alt="lupa de pesquisa" class="cabecalho__lupa--campo">           
+            </div>
+        </div>
+        <a href="#" class="cabecalho__lupa"><span class="material-icons">search</span></a>
+    </header>
+    <main class="principal">
+        <section class="principal__conteudo">
+            <div>
+                <img src="/img/canecatrooper.svg" alt="Caneca Star Wars" class="principal__img">
+            </div>
+            <div class="principal__descricao">
+                <h1 class="principal__titulo">Produto XYZ</h1>
+                <h2 class="principal__preco">R$ 60,00</h2>
+                <p class="principal__texto">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+            </div>    
+            </section>
+        <section class="produtos__similares">
+            <h2 class="produtos__titulo">Produtos similares</h2>
+        </section>
+        <section class="produtos">
+            <div class="conteudo__card">
+                <img src="img/controle.svg" class="principal__imagem" alt="controlexbox">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+            <div class="conteudo__card">
+                <img src="img/minivader.svg" class="principal__imagem" alt="lego star wars">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+            <div class="conteudo__card">
+                <img src="img/yoda.svg" class="principal__imagem" alt="boneco mestre yoda">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+            <div class="conteudo__card">
+                <img src="img/trooper.svg" class="principal__imagem" alt="boneco storme trooper">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+            <div class="conteudo__card">
+                <img src="img/babyyoda.svg" class="principal__imagem" alt="boneco grogu">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+            <div class="conteudo__card">
+                <img src="img/star.svg" class="principal__imagem" alt="boneco kylo ren">
+                <p class="conteudo__nome">Produto XYZ</p>
+                <p class="conteudo__valor">R$ 60,00</p>
+                <a href="#" class="conteudo__ver">Ver produto</a>
+            </div>
+
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contato__link--rodape">    
+            <a href="#" class="contato__link">
+                <div class="contato__logo">
+                    <img src="img/logo.svg" alt="Logo Alura Geek" class="contato__logo--alura">
+                </div>
+            </a>
+            <ul class="contato__link--alura">
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Quem somos nós</a>
+                </li>
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Política de privacidade</a>
+                </li>
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Programa fidelidade</a>
+                </li>
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Nossas lojas</a>
+                </li>
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Quero ser franqueado</a>
+                </li>
+                <li class="contato__link--empresa">
+                    <a href="#" class="contato__link--geek">Anuncie aqui</a>
+                </li>
+            </ul>
+        </div>
+        <form action="contact_form" class="contato__formulario">
+            <h2 class="contato__formulario--titulo">Fale conosco</h2>
+            <label for="name" class="contato__formulario--label">Escreva seu nome</label>
+            <input type="name" type="text" data-type="contact" maxlength="50" placeholder="Nome" required class="contato__formulario--nome">
+            <span role="alert"></span>
+            <label for="message" class="contato__formulario--label">Escreva sua mensagem</label>
+            <textarea name="mensagem" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem" maxlength="200" required class="contato__formulario--mensagem"></textarea>
+            <span role="alert"></span>
+            <button type="submit" class="contato__formulario--botao">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <a href="https://github.com/SeijiGabriel" class="rodape__github"><p class="rodape__texto">Desenvolvido por Gabriel Kanda</p></a>
+        <p class="rodape__texto">2022</p>
+    </footer>
+
+</body>
+</html>

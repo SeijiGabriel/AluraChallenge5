@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="estilos-css/header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="estilos-css/principal.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__campo">
+            <a class="cabecalho__inicio" href="#" id="header">
+                <a href="index.html"><img class="cabecalho__logo" src="/img/logo.svg" alt="Loja Alura Geek"></a>
+            </a>
+            <div class="cabecalho__pesquisa">
+                <input type="search" id="h__input" name="search" class="cabecalho__pesquisa--barra" minlength="3" placeholder="O que deseja encontrar?">
+                <img src="/img/lupa.svg" alt="lupa de pesquisa" class="cabecalho__lupa--campo">           
+            </div>
+        </div>
+        <a href="#" class="cabecalho__lupa"><span class="material-icons">search</span></a>
+    </header>
+    <main>
+        <section class="login">
+            <form action="/css/produtos.css" class="login__form">
+                <div class="login__sessao">
+                    <h2 class="login__titulo">Iniciar Sessão</h2>
+                    <input type="email" id="email" class="login__email" placeholder="Escreva seu email">
+                    <input type="password" id="password" class="login__password" placeholder="Escreva sua senha">
+                    <button class="login__botao">Entrar</button>
+                </div>
+            </form>
+        </section>
+        <section class="contato">
+            <div class="contato__link--rodape">    
+                    <div class="contato__logo">
+                        <a href="index.html"><img src="img/logo.svg" alt="Logo Alura Geek" class="contato__logo--alura"></a>
+                    </div>
+                <ul class="contato__link--alura">
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Quem somos nós</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Política de privacidade</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Programa fidelidade</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Nossas lojas</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Quero ser franqueado</a>
+                    </li>
+                    <li class="contato__link--empresa">
+                        <a href="#" class="contato__link--geek">Anuncie aqui</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="contact_form" class="contato__formulario">
+                <h2 class="contato__formulario--titulo">Fale conosco</h2>
+                <label for="name" class="contato__formulario--label">Escreva seu nome</label>
+                <input type="name" type="text" data-type="contact" maxlength="50" placeholder="Nome" required class="contato__formulario--nome">
+                <span role="alert"></span>
+                <label for="message" class="contato__formulario--label">Escreva sua mensagem</label>
+                <textarea name="mensagem" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem" maxlength="200" required class="contato__formulario--mensagem"></textarea>
+                <span role="alert"></span>
+                <button type="submit" class="contato__formulario--botao">Enviar mensagem</button>
+            </form>
+        </section>  
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Gabriel Kanda</p>
+        <p class="rodape__texto">2022</p>
+    </footer>
+
+</body>
+</html>

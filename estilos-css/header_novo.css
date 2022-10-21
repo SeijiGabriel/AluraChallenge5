@@ -1,0 +1,186 @@
+body {
+    font-family: var(--raleway);
+    background-color: var(--branco);
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 152px 10px 152px;
+}
+
+.cabecalho__pesquisa {
+    display: none;
+}
+
+.cabecalho__logo {
+    width: 100px;
+    padding: 1rem;
+}
+
+.cabecalho__menu {
+    width: fit-content;
+    padding: 12px 16px 12px 16px;
+    background-color: var(--branco);
+    border: 1px solid var(--azul-fonte);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azul-fonte);
+    text-decoration: none;
+}
+
+.cabecalho__lupa {
+    padding: 1rem;
+}
+
+/* ⬇⬇⬇ Adicionar Novo produto ⬇⬇⬇ */
+
+.principal {
+    background-color: var(--branco-fundo);
+}
+
+.principal {
+    padding: 1rem;
+}
+
+.formulario {
+    margin: 16px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.formulario__img {
+    padding:  8px 12px 32px 12px;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    box-sizing: border-box; /* Para o elemento não vazar da tela */
+    border-bottom:solid 2px var(--cinza-borda);
+}
+
+.formulario__categorias {
+    padding: 16px 12px 16px 0;
+    width: 100%;
+}
+
+.formulario__titulo, .formulario__titulo-preco {
+    background-color: var(--branco);
+    padding: 8px 12px;
+    font-size: 12px;
+    color: var(--cinza-fonte);
+}
+.formulario__selecao {
+    border: none;
+    -webkit-appearance: none;
+    padding: 4px 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom:solid 2px var(--cinza-borda);
+    outline: none; /* Para não aparecer o contorno ao clicar*/
+}
+.formulario__nome {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__preco {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__input::placeholder {
+    color: black;
+}
+
+.formulario__input-preco::placeholder {
+    color: black;
+}
+
+.formulario__input, .formulario__input-preco {
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 0 0 6px 12px;
+    border-bottom:solid 2px var(--cinza-borda);
+    outline: none;
+}
+
+.formulario__input-descricao {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 16px 12px 50px 8px;
+    border: none;
+    border-bottom:solid 2px var(--cinza-borda);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formulario__botao-adicionar {
+    width: 100%;
+    margin-top: 16px;
+    padding: 1rem;
+    color: var(--branco);
+    background-color: var(--azul-fonte);
+    border: none;
+}
+@media screen and (min-width: 768px) {
+    
+    .cabecalho__campo {
+        display: flex;
+        align-items: center;
+        column-gap: 2em;
+    }
+
+    .cabecalho__menu {
+        margin-right: 24px;
+    }
+    
+    .cabecalho__pesquisa{
+		align-items:center;
+        width: 272px;
+        height: 40px;
+		padding:0.2rem 1rem;
+		background-color: #F5F5F5;
+		border-radius: 20px;
+		display:flex;
+	}
+
+    .cabecalho__lupa {
+        display: none;
+    }
+
+    .cabecalho__pesquisa--barra {
+        width: inherit;
+        background: var(--cinza-claro);
+        border: none;
+        margin-left: 1rem;
+        font-family: var(--raleway);
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+}
+@media screen and (min-width:1440px) {
+    .contato__link--rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 7rem;
+    }
+    
+    .contato {
+        padding: 4rem 9.5rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    
+    .principal__area {
+        padding: 64px 440.5px;
+    }
+}
