@@ -1,5 +1,5 @@
 .banner {
-    background:url("../img/249ec3bb3cddfb099af8d5d3dac01246.jpeg")  no-repeat;
+    background:url("/img/249ec3bb3cddfb099af8d5d3dac01246.jpeg")  no-repeat;
     color: var(--branco);
 	background-size: cover;
 	background-position: center;
