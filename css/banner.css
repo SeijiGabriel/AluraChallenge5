@@ -1,6 +1,7 @@
 .banner {
-    background:url("/img/banner-image.png")  no-repeat;
+    background-image:url("/img/banner-image.png");
     color: var(--branco);
+    background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
     box-shadow: inset 0 0 150rem black;
