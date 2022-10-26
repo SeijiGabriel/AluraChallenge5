@@ -1,10 +1,9 @@
 .banner {
-    background-image:url("/img/banner-image.png");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/img/banner__tablet.jpeg);
     color: var(--branco);
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-    box-shadow: inset 0 0 150rem black;
 	padding: 16px;
     width: 100vw;
 	height: 50vw;
